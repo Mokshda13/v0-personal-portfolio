@@ -1,13 +1,20 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+<<<<<<< HEAD
 import { ChevronRight, Download, ExternalLink, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+=======
+import { ChevronRight, Download, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
 import { AnimatedElement } from "@/components/animated-element"
 import { ParallaxSection } from "@/components/parallax-section"
 import { AnimatedBackground } from "@/components/animated-background"
 import { GradientHeading } from "@/components/gradient-heading"
 import { ColorfulBadge } from "@/components/colorful-badge"
+<<<<<<< HEAD
 import { SectionToggle } from "@/components/section-toggle"
+=======
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
 
 export default function Home() {
   // Array of badge colors for cycling through
@@ -30,6 +37,7 @@ export default function Home() {
             <Link href="#about" className="text-sm font-medium hover:text-purple transition-colors">
               About
             </Link>
+<<<<<<< HEAD
             <Link href="#skills" className="text-sm font-medium hover:text-purple transition-colors">
               Skills
             </Link>
@@ -41,6 +49,19 @@ export default function Home() {
             </Link>
             <Link href="#education" className="text-sm font-medium hover:text-purple transition-colors">
               Education
+=======
+            <Link href="#experience" className="text-sm font-medium hover:text-purple transition-colors">
+              Experience
+            </Link>
+            <Link href="#education" className="text-sm font-medium hover:text-purple transition-colors">
+              Education
+            </Link>
+            <Link href="#projects" className="text-sm font-medium hover:text-purple transition-colors">
+              Projects
+            </Link>
+            <Link href="#skills" className="text-sm font-medium hover:text-purple transition-colors">
+              Skills
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
             </Link>
             <Link href="#contact" className="text-sm font-medium hover:text-purple transition-colors">
               Contact
@@ -112,11 +133,29 @@ export default function Home() {
                       className="hover:scale-105 transition-transform border-purple text-purple hover:bg-purple/10"
                       asChild
                     >
+<<<<<<< HEAD
                       <Link href="#skills">
                         View Skills
                         <ChevronRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>
+=======
+                      <Link href="#experience">
+                        View Experience
+                        <ChevronRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="mt-2 w-full sm:w-auto hover:scale-105 transition-transform border-purple text-purple hover:bg-purple/10"
+                      asChild
+                    >
+                      <Link href="/Mokshda-Sharma-Resume.pdf" target="_blank">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download Resume
+                      </Link>
+                    </Button>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                   </div>
                   <div className="flex items-center gap-4 pt-4">
                     <Link
@@ -194,9 +233,15 @@ export default function Home() {
             <div className="w-full max-w-3xl py-4 mx-auto">
               <div className="grid gap-4 md:grid-cols-3">
                 <AnimatedElement variant="fadeInUp" delay={0.1}>
+<<<<<<< HEAD
                   <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                     <CardContent className="p-6 flex flex-col items-center h-full">
                       <div className="flex flex-col items-center space-y-2 text-center h-full">
+=======
+                  <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center space-y-2 text-center">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                         <div className="p-2 bg-purple/10 rounded-full">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -225,9 +270,15 @@ export default function Home() {
                   </Card>
                 </AnimatedElement>
                 <AnimatedElement variant="fadeInUp" delay={0.2}>
+<<<<<<< HEAD
                   <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                     <CardContent className="p-6 flex flex-col items-center h-full">
                       <div className="flex flex-col items-center space-y-2 text-center h-full">
+=======
+                  <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center space-y-2 text-center">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                         <div className="p-2 bg-purple/10 rounded-full">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -254,9 +305,15 @@ export default function Home() {
                   </Card>
                 </AnimatedElement>
                 <AnimatedElement variant="fadeInUp" delay={0.3}>
+<<<<<<< HEAD
                   <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                     <CardContent className="p-6 flex flex-col items-center h-full">
                       <div className="flex flex-col items-center space-y-2 text-center h-full">
+=======
+                  <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center space-y-2 text-center">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                         <div className="p-2 bg-purple/10 rounded-full">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -287,6 +344,7 @@ export default function Home() {
           </div>
         </section>
 
+<<<<<<< HEAD
         {/* Skills Section */}
         <section id="skills" className="py-16 bg-white">
           <div className="container px-4 mx-auto md:px-6">
@@ -504,6 +562,8 @@ export default function Home() {
           </div>
         </section>
 
+=======
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
         {/* Experience Section */}
         <section id="experience" className="py-16 bg-gray-50">
           <div className="container px-4 mx-auto md:px-6">
@@ -672,9 +732,22 @@ export default function Home() {
             </AnimatedElement>
             <div className="grid gap-6 mt-8 md:grid-cols-3 lg:gap-8">
               <AnimatedElement variant="fadeInUp" delay={0.1}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=RAG"
+                          alt="RAG Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Corpus+Key+RAG"
@@ -683,7 +756,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">Corpus Key RAG</h3>
                       <p className="text-sm text-gray-500">Under Prof John Burr</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -693,6 +770,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Consulted on optimizing the RAG architecture of the All-Day TA chatbot for Purdue students.
                         Recommended and deployed a Multi-Headed RAG framework using BERT embeddings.
@@ -752,14 +830,33 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Consulted on optimizing the RAG architecture of the All-Day TA chatbot for Purdue students.
+                        Recommended and deployed a Multi-Headed RAG framework using BERT embeddings.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInUp" delay={0.2}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=AI"
+                          alt="AI Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Doc2Deck"
@@ -768,7 +865,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">Doc2Deck</h3>
                       <p className="text-sm text-gray-500">Under Prof Rohit Aggarwal</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -778,6 +879,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Built an AI-powered pipeline to convert Word documents into PowerPoint presentations using a
                         modular, agentic architecture with LlamaParse, Claude, and GPT-4.
@@ -837,14 +939,33 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Built an AI-powered pipeline to convert Word documents into PowerPoint presentations using a
+                        modular, agentic architecture with LlamaParse, Claude, and GPT-4.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInUp" delay={0.3}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=ML"
+                          alt="ML Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Sales+Forecasting"
@@ -853,7 +974,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">Sales Forecasting and Consumer Segmentation</h3>
                       <p className="text-sm text-gray-500">Primal Beef Market</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -863,6 +988,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Analyzed the Primal Beef Market to develop predictive sales models and segment consumers. Built
                         models for sales forecasting with key insights on targeted promotions.
@@ -925,14 +1051,33 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Analyzed the Primal Beef Market to develop predictive sales models and segment consumers. Built
+                        models for sales forecasting with key insights on targeted promotions.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInUp" delay={0.4}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=Tableau"
+                          alt="Tableau Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Data+Visualization"
@@ -941,7 +1086,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">From Wealth to Well Being</h3>
                       <p className="text-sm text-gray-500">Data Visualization Tableau Project</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -951,6 +1100,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Created interactive dashboards combining data-driven insights with storytelling to analyze
                         global disparities in economic growth, healthcare, and education investments.
@@ -985,14 +1135,33 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Created interactive dashboards combining data-driven insights with storytelling to analyze
+                        global disparities in economic growth, healthcare, and education investments.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInUp" delay={0.5}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=SAS"
+                          alt="SAS Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Bankruptcy+Prediction"
@@ -1001,7 +1170,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">Bankruptcy Prediction Modelling</h3>
                       <p className="text-sm text-gray-500">Purdue University</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -1011,6 +1184,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Built an ensemble modeling approach combining Gradient Boosting, Neural Networks, and LASSO
                         regression within SAS EM, achieving 94.15% accuracy on test data.
@@ -1073,14 +1247,33 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Built an ensemble modeling approach combining Gradient Boosting, Neural Networks, and LASSO
+                        regression within SAS EM, achieving 94.15% accuracy on test data.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInUp" delay={0.6}>
+<<<<<<< HEAD
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-0 flex flex-col h-full">
                     <div className="h-48 bg-purple/5 overflow-hidden relative">
+=======
+                <Card className="overflow-hidden hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-0">
+                    <div className="h-48 bg-purple/5 overflow-hidden relative">
+                      <div className="absolute top-2 right-2 z-10 bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-md">
+                        <img
+                          src="/placeholder.svg?height=30&width=30&text=NLP"
+                          alt="NLP Logo"
+                          className="w-6 h-6 object-contain"
+                        />
+                      </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <ParallaxSection speed={0.05} direction="down">
                         <img
                           src="/placeholder.svg?height=200&width=400&text=Disaster+Tweets"
@@ -1089,7 +1282,11 @@ export default function Home() {
                         />
                       </ParallaxSection>
                     </div>
+<<<<<<< HEAD
                     <div className="p-6 flex flex-col flex-grow">
+=======
+                    <div className="p-6">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                       <h3 className="text-xl font-bold text-purple">Classifying Disaster Tweets</h3>
                       <p className="text-sm text-gray-500">Purdue University</p>
                       <div className="flex flex-wrap gap-2 mt-4">
@@ -1099,6 +1296,7 @@ export default function Home() {
                           </ColorfulBadge>
                         ))}
                       </div>
+<<<<<<< HEAD
                       <p className="mt-4 text-gray-500 flex-grow">
                         Classified disaster-related tweets using an ensemble model (LSTM, GRU) and a BERT-based model,
                         achieving an F1 score of 0.83 on a dataset of 10k+ tweets.
@@ -1161,6 +1359,12 @@ export default function Home() {
                           </Link>
                         </Button>
                       </div>
+=======
+                      <p className="mt-4 text-gray-500">
+                        Classified disaster-related tweets using an ensemble model (LSTM, GRU) and a BERT-based model,
+                        achieving an F1 score of 0.83 on a dataset of 10k+ tweets.
+                      </p>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                     </div>
                   </CardContent>
                 </Card>
@@ -1187,11 +1391,26 @@ export default function Home() {
             </AnimatedElement>
             <div className="grid gap-8 mt-8 md:grid-cols-2 lg:gap-12">
               <AnimatedElement variant="fadeInLeft" delay={0.1}>
+<<<<<<< HEAD
                 <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-6 flex flex-col h-full">
                     <div className="space-y-4 h-full">
                       <div className="space-y-2">
                         <div className="flex items-center gap-3">
+=======
+                <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-6">
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 overflow-hidden rounded-full bg-purple/10 flex items-center justify-center">
+                            <img
+                              src="/placeholder.svg?height=48&width=48&text=Purdue"
+                              alt="Purdue Logo"
+                              className="w-10 h-10 object-contain"
+                            />
+                          </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                           <h3 className="text-xl font-bold text-purple">Purdue University</h3>
                         </div>
                         <p className="text-gray-500">Daniels School of Business</p>
@@ -1224,11 +1443,26 @@ export default function Home() {
                 </Card>
               </AnimatedElement>
               <AnimatedElement variant="fadeInRight" delay={0.1}>
+<<<<<<< HEAD
                 <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform h-full">
                   <CardContent className="p-6 flex flex-col h-full">
                     <div className="space-y-4 h-full">
                       <div className="space-y-2">
                         <div className="flex items-center gap-3">
+=======
+                <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-6">
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 overflow-hidden rounded-full bg-purple/10 flex items-center justify-center">
+                            <img
+                              src="/placeholder.svg?height=48&width=48&text=NIT"
+                              alt="NIT Logo"
+                              className="w-10 h-10 object-contain"
+                            />
+                          </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                           <h3 className="text-xl font-bold text-purple">National Institute of Technology</h3>
                         </div>
                         <p className="text-gray-500">Electronics and Communication Engineering</p>
@@ -1253,6 +1487,7 @@ export default function Home() {
           </div>
         </section>
 
+<<<<<<< HEAD
         {/* Awards & Certifications Section */}
         <section className="py-16 bg-gray-50">
           <SectionToggle
@@ -1503,20 +1738,34 @@ export default function Home() {
 
         {/* Resume Section */}
         <section className="py-16 bg-white">
+=======
+        {/* Skills Section */}
+        <section id="skills" className="py-16 bg-white">
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
           <div className="container px-4 mx-auto md:px-6">
             <AnimatedElement variant="fadeInUp">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
                 <div className="space-y-2">
+<<<<<<< HEAD
                   <ColorfulBadge variant="purple">Resume</ColorfulBadge>
                   <GradientHeading as="h2" className="text-3xl sm:text-4xl">
                     Download My Resume
                   </GradientHeading>
                   <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Get a comprehensive overview of my skills, experience, and qualifications.
+=======
+                  <ColorfulBadge variant="purple">Skills</ColorfulBadge>
+                  <GradientHeading as="h2" className="text-3xl sm:text-4xl">
+                    Technical Skills & Expertise
+                  </GradientHeading>
+                  <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    My professional toolkit and technical capabilities.
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                   </p>
                 </div>
               </div>
             </AnimatedElement>
+<<<<<<< HEAD
             <div className="flex justify-center mt-8">
               <Button
                 size="lg"
@@ -1528,6 +1777,321 @@ export default function Home() {
                   Download Resume
                 </Link>
               </Button>
+=======
+            <div className="grid gap-6 mt-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {[
+                {
+                  title: "Data Visualization",
+                  description: "Tableau, Power BI",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M3 3v18h18" />
+                      <path d="m19 9-5 5-4-4-3 3" />
+                    </svg>
+                  ),
+                  delay: 0.1,
+                },
+                {
+                  title: "Programming",
+                  description: "Python, SQL, R",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4" />
+                    </svg>
+                  ),
+                  delay: 0.15,
+                },
+                {
+                  title: "AI & ML",
+                  description: "RAG, Predictive Modeling",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
+                  ),
+                  delay: 0.2,
+                },
+                {
+                  title: "Business Strategy",
+                  description: "A/B Testing, Analytics",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                      <circle cx="9" cy="7" r="4" />
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg>
+                  ),
+                  delay: 0.25,
+                },
+                {
+                  title: "Data Processing",
+                  description: "Alteryx, DSS",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <rect width="18" height="18" x="3" y="3" rx="2" />
+                      <path d="M7 7h10" />
+                      <path d="M7 12h10" />
+                      <path d="M7 17h10" />
+                    </svg>
+                  ),
+                  delay: 0.35,
+                },
+                {
+                  title: "Cloud & Databases",
+                  description: "Snowflake, S3",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
+                      <path d="M16 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a1 1 0 0 0-1-1" />
+                      <path d="M9 13h6" />
+                      <path d="M12 10v6" />
+                    </svg>
+                  ),
+                  delay: 0.4,
+                },
+                {
+                  title: "Reporting",
+                  description: "BI Tools, Dashboards",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                      <polyline points="14 2 14 8 20 8" />
+                      <path d="M12 18v-6" />
+                      <path d="M8 18v-1" />
+                      <path d="M16 18v-3" />
+                    </svg>
+                  ),
+                  delay: 0.45,
+                },
+                {
+                  title: "LLM & NLP",
+                  description: "Claude, GPT-4, BERT",
+                  icon: (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-6 h-6 text-purple"
+                    >
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                  ),
+                  delay: 0.5,
+                },
+              ].map((skill, index) => (
+                <AnimatedElement key={index} variant="fadeInUp" delay={skill.delay}>
+                  <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col items-center space-y-2 text-center">
+                        <div className="p-2 bg-purple/10 rounded-full">{skill.icon}</div>
+                        <h3 className="text-xl font-bold text-purple">{skill.title}</h3>
+                        <p className="text-sm text-gray-500">{skill.description}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </AnimatedElement>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Honors Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container px-4 mx-auto md:px-6">
+            <AnimatedElement variant="fadeInUp">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <ColorfulBadge variant="purple">Honors</ColorfulBadge>
+                  <GradientHeading as="h2" className="text-3xl sm:text-4xl">
+                    Awards & Recognition
+                  </GradientHeading>
+                  <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Achievements and recognition throughout my academic and professional career.
+                  </p>
+                </div>
+              </div>
+            </AnimatedElement>
+            <div className="grid gap-6 mt-8 md:grid-cols-3">
+              <AnimatedElement variant="fadeInUp" delay={0.1}>
+                <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center space-y-2 text-center">
+                      <div className="p-2 bg-purple/10 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="w-6 h-6 text-purple"
+                        >
+                          <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
+                          <circle cx="12" cy="8" r="7" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-purple">Beta Gamma Sigma Honor</h3>
+                      <p className="text-sm text-gray-500">
+                        Recognized as a top business student at Purdue University for academic excellence.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AnimatedElement>
+              <AnimatedElement variant="fadeInUp" delay={0.2}>
+                <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center space-y-2 text-center">
+                      <div className="p-2 bg-purple/10 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="w-6 h-6 text-purple"
+                        >
+                          <path d="M12.5 2h-1V1h1z" />
+                          <path d="M18 7v4" />
+                          <path d="M15 11V7.5a3.5 3.5 0 0 0-7 0V11" />
+                          <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-purple">Employee of the Quarter</h3>
+                      <p className="text-sm text-gray-500">
+                        Earned Employee of the Quarter at Genpact for exceptional performance.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AnimatedElement>
+              <AnimatedElement variant="fadeInUp" delay={0.3}>
+                <Card className="hover:shadow-lg transition-shadow border border-purple/10 hover:scale-105 transition-transform">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center space-y-2 text-center">
+                      <div className="p-2 bg-purple/10 rounded-full">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="w-6 h-6 text-purple"
+                        >
+                          <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                          <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                          <path d="M4 22h16" />
+                          <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                          <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                          <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-purple">Standout Performer</h3>
+                      <p className="text-sm text-gray-500">
+                        Recognized as Standout Performer at ZS Associates for excellence in project delivery.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AnimatedElement>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
             </div>
           </div>
         </section>
@@ -1607,6 +2171,27 @@ export default function Home() {
                       <p className="text-gray-500">West Lafayette, IN</p>
                     </div>
                   </div>
+<<<<<<< HEAD
+=======
+                  <div className="flex items-center gap-4">
+                    <div className="p-2 bg-purple/10 rounded-full">
+                      <Download className="w-6 h-6 text-purple" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-purple">Resume</h3>
+                      <p className="text-gray-500">
+                        <a
+                          href="/Mokshda-Sharma-Resume.pdf"
+                          target="_blank"
+                          className="hover:underline hover:text-purple transition-colors"
+                          rel="noreferrer"
+                        >
+                          Download my resume
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+>>>>>>> 61900030cdb8ac8c2ba2d208cc0a2bff15fcdef9
                 </div>
               </AnimatedElement>
               <AnimatedElement variant="fadeInRight" delay={0.1}>

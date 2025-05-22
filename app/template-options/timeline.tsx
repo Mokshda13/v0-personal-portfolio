@@ -2,9 +2,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Download, Linkedin, Mail, Phone } from "lucide-react"
+import { ArrowRight, Download, Linkedin, Mail, Phone, ChevronDown, ChevronUp } from "lucide-react"
+import { useState } from "react"
 
 export default function TimelineTemplate() {
+  const [isPersonalSectionVisible, setIsPersonalSectionVisible] = useState(false)
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -130,9 +133,9 @@ export default function TimelineTemplate() {
                 <div className="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">About Me</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Professional Profile</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I'm a Master's in Business Analytics student with expertise in data analytics and business strategy. I
-                  have experience in delivering data-driven insights and supporting decision-making in roles such as
-                  Data Analyst, Business Consultant, and Strategy Analyst.
+                  As a Master's student in Business Analytics at Purdue University, I specialize in leveraging data science 
+                  and machine learning to drive business decisions. With experience in data analysis and consulting, 
+                  I excel at transforming complex data into actionable insights.
                 </p>
               </div>
               <div className="w-full max-w-3xl py-4">
@@ -159,9 +162,9 @@ export default function TimelineTemplate() {
                             <path d="m9 15 3 3 3-3" />
                           </svg>
                         </div>
-                        <h3 className="text-xl font-bold">Data Analysis</h3>
+                        <h3 className="text-xl font-bold">Data Science</h3>
                         <p className="text-sm text-gray-500">
-                          Expertise in Tableau, Power BI, Python, SQL, R, and Alteryx
+                          Advanced proficiency in Python, R, SQL, and Machine Learning frameworks
                         </p>
                       </div>
                     </CardContent>
@@ -186,9 +189,9 @@ export default function TimelineTemplate() {
                             <path d="m19 9-5 5-4-4-3 3" />
                           </svg>
                         </div>
-                        <h3 className="text-xl font-bold">Business Strategy</h3>
+                        <h3 className="text-xl font-bold">Analytics</h3>
                         <p className="text-sm text-gray-500">
-                          Experience in delivering data-driven insights for strategic decisions
+                          Expert in Tableau, Power BI, and advanced statistical analysis
                         </p>
                       </div>
                     </CardContent>
@@ -215,7 +218,7 @@ export default function TimelineTemplate() {
                         </div>
                         <h3 className="text-xl font-bold">AI & ML</h3>
                         <p className="text-sm text-gray-500">
-                          Skilled in RAG Techniques, Predictive Modeling, and A/B Testing
+                          Specialized in LLMs, RAG, and predictive modeling
                         </p>
                       </div>
                     </CardContent>
@@ -233,151 +236,88 @@ export default function TimelineTemplate() {
               <div className="space-y-2">
                 <div className="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Personal Side</div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">My Hobbies & Interests</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Beyond the professional realm, here's what keeps me energized and inspired.
-                </p>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsPersonalSectionVisible(!isPersonalSectionVisible)}
+                  className="flex items-center gap-2"
+                >
+                  {isPersonalSectionVisible ? (
+                    <>
+                      Hide Details <ChevronUp className="w-4 h-4" />
+                    </>
+                  ) : (
+                    <>
+                      Show Details <ChevronDown className="w-4 h-4" />
+                    </>
+                  )}
+                </Button>
               </div>
-              <div className="w-full max-w-4xl py-4">
-                <div className="grid gap-6 md:grid-cols-3">
-                  {/* Photography Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Photography"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Photography</h3>
-                        <p className="text-sm text-gray-500">
-                          Capturing life's beautiful moments through my lens. I specialize in landscape and street photography,
-                          always looking for unique perspectives and stories to tell through my images.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
+              {isPersonalSectionVisible && (
+                <div className="w-full max-w-4xl py-4">
+                  <div className="grid gap-6 md:grid-cols-3">
+                    {/* Photography Hobby */}
+                    <Card className="overflow-hidden">
+                      <CardContent className="p-0">
+                        <div className="relative h-48">
+                          <img
+                            src="/placeholder.svg?height=200&width=300"
+                            alt="Photography"
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold mb-2">Photography</h3>
+                          <p className="text-sm text-gray-500">
+                            Capturing life's beautiful moments through my lens. I specialize in landscape and street photography,
+                            always looking for unique perspectives and stories to tell through my images.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
 
-                  {/* Hiking Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Hiking"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Hiking</h3>
-                        <p className="text-sm text-gray-500">
-                          Exploring nature trails and conquering peaks is my way of finding peace and adventure.
-                          I've hiked several national parks and am always planning my next outdoor expedition.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
+                    {/* Hiking Hobby */}
+                    <Card className="overflow-hidden">
+                      <CardContent className="p-0">
+                        <div className="relative h-48">
+                          <img
+                            src="/placeholder.svg?height=200&width=300"
+                            alt="Hiking"
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold mb-2">Hiking</h3>
+                          <p className="text-sm text-gray-500">
+                            Exploring nature trails and conquering peaks is my way of finding peace and adventure.
+                            I've hiked several national parks and am always planning my next outdoor expedition.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
 
-                  {/* Cooking Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Cooking"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Cooking</h3>
-                        <p className="text-sm text-gray-500">
-                          Experimenting with flavors and creating fusion dishes is my creative outlet.
-                          I love combining different cuisines and sharing my culinary adventures with friends and family.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
+                    {/* Cooking Hobby */}
+                    <Card className="overflow-hidden">
+                      <CardContent className="p-0">
+                        <div className="relative h-48">
+                          <img
+                            src="/placeholder.svg?height=200&width=300"
+                            alt="Cooking"
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div className="p-6">
+                          <h3 className="text-xl font-bold mb-2">Cooking</h3>
+                          <p className="text-sm text-gray-500">
+                            Experimenting with flavors and creating fusion dishes is my creative outlet.
+                            I love combining different cuisines and sharing my culinary adventures with friends and family.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Personal Profile Section */}
-        <section id="personal-profile" className="py-16 bg-gray-50">
-          <div className="container px-4 mx-auto md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 text-gray-800">Personal Side</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">My Hobbies & Interests</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Beyond the professional realm, here's what keeps me energized and inspired.
-                </p>
-              </div>
-              <div className="w-full max-w-4xl py-4">
-                <div className="grid gap-6 md:grid-cols-3">
-                  {/* Photography Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Photography"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Photography</h3>
-                        <p className="text-sm text-gray-500">
-                          Capturing life's beautiful moments through my lens. I specialize in landscape and street photography,
-                          always looking for unique perspectives and stories to tell through my images.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Hiking Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Hiking"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Hiking</h3>
-                        <p className="text-sm text-gray-500">
-                          Exploring nature trails and conquering peaks is my way of finding peace and adventure.
-                          I've hiked several national parks and am always planning my next outdoor expedition.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Cooking Hobby */}
-                  <Card className="overflow-hidden">
-                    <CardContent className="p-0">
-                      <div className="relative h-48">
-                        <img
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Cooking"
-                          className="object-cover w-full h-full"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <h3 className="text-xl font-bold mb-2">Cooking</h3>
-                        <p className="text-sm text-gray-500">
-                          Experimenting with flavors and creating fusion dishes is my creative outlet.
-                          I love combining different cuisines and sharing my culinary adventures with friends and family.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </section>
